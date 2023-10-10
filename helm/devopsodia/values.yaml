@@ -5,10 +5,10 @@
 replicaCount: 4
 
 image:
-  repository: sumithpe/s4hmisfront
+  repository: quay.io/sumit-bharat_mandlik/imageidentification
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1"
+  tag: "0.2.0"
 
 imagePullSecrets: []
 nameOverride: "imageapp"
