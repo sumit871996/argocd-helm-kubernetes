@@ -5,10 +5,10 @@
 replicaCount: 4
 
 image:
-  repository: quay.io/sumit-bharat_mandlik/imageidentification
+  repository: sumithpe/s4hmisfront:tagname
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "0.2.0"
+  tag: "1"
 
 imagePullSecrets: []
 nameOverride: "imageapp"
@@ -37,8 +37,8 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
-  port: 80
+  type: NodePort
+  port: 3000
 
 ingress:
   enabled: false
