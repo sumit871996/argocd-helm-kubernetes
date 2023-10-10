@@ -5,18 +5,18 @@
 replicaCount: 4
 
 image:
-  repository: 192.168.56.120:9092/argocd-image-helm/devopsodiahelm
-  pullPolicy: IfNotPresent
+  repository: quay.io/sumit-bharat_mandlik/imageidentification
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1"
+  tag: "0.2.0"
 
 imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
+nameOverride: "imageapp"
+fullnameOverride: "imagehelm"
 
 serviceAccount:
   # Specifies whether a service account should be created
-  create: false
+  create: true
   # Annotations to add to the service account
   annotations: {}
   # The name of the service account to use.
