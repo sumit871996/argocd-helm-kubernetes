@@ -1,0 +1,11 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: {{ include "devopsodia.fullname" . }}
+spec:
+  host: {{ include "devopsodia.fullname" . }}-{{ .Values.namespace }}.apps.{{ .Values.domain }}
+  to:
+    kind: Service
+    name: {{ include "devopsodia.fullname" . }}
+  port:
+    targetPort: {{ .Values.service.port }}
