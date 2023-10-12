@@ -4,6 +4,8 @@
 
 replicaCount: 4
 
+namespace: newdemo
+
 image:
   repository: quay.io/sumit-bharat_mandlik/imageidenti
   pullPolicy: Always
