@@ -6,7 +6,7 @@ replicaCount: 4
 namespace: newdemo
 domain: ocp02.anpslab.com
 image:
-  repository: quay.io/sumit-bharat_mandlik/imageidentification
+  repository: quay.io/sumit-bharat_mandlik/imageidenti
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "0.2.0"
