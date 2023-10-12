@@ -3,7 +3,7 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: {{ include "devopsodia.fullname" . }}
 spec:
-  host: imageidentificationroute-newdemo.apps.hpeopenshift.eastus.aroapp.io
+  host: {{ include "devopsodia.fullname" . }}-{{ .Values.namespace }}.apps.hpeopenshift.eastus.aroapp.io
   to:
     kind: Service
     name: {{ include "devopsodia.fullname" . }}
